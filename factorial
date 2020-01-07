@@ -1,0 +1,20 @@
+function factorialize(num) {
+    var factorial = 0;
+    if (num != 0) {
+        for (let i = num; i >= 1; i--) {
+            if (i === num) {
+                factorial = i;
+            } else {
+                factorial *= i;
+            }
+        }
+    } else {
+        factorial = 1;
+    }
+
+    return factorial;
+}
+
+
+console.log(factorialize(5));
+
